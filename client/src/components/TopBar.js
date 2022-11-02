@@ -5,6 +5,57 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
+const testCategoriesObjects = [
+  {
+    _id: {
+      $oid: "635f14dcc9bbd71ae973abc7",
+    },
+    name: "book",
+    createdAt: {
+      $date: {
+        $numberLong: "1667175369230",
+      },
+    },
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: "6362c0756285631b76fe2c85",
+    },
+    name: "manga",
+    createdAt: {
+      $date: {
+        $numberLong: "1667175369230",
+      },
+    },
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: "6362c0886285631b76fe2c86",
+    },
+    name: "game",
+    createdAt: {
+      $date: {
+        $numberLong: "1667175369230",
+      },
+    },
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: "635f22acb77a27bed7368704",
+    },
+    name: "test",
+    createdAt: {
+      $date: {
+        $numberLong: "1667179134279",
+      },
+    },
+    __v: 0,
+  },
+];
+
 function TopBar() {
   return (
     <Navbar bg="primary" variant="dark" expand="md" className="mb-3">
@@ -18,17 +69,9 @@ function TopBar() {
             navbarScroll
           >
             <Nav.Link href="/about">About</Nav.Link>
-            <NavDropdown title="Categories" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="/books">Books</NavDropdown.Item>
-              <NavDropdown.Item href="/comics" disabled>
-                Comics
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/games" disabled>
-                Games
-              </NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link href="/products">Products</Nav.Link>
           </Nav>
-          <Form className="d-flex">
+          {/* <Form className="d-flex">
             <Form.Control
               type="search"
               placeholder="Search"
@@ -36,7 +79,7 @@ function TopBar() {
               aria-label="Search"
             />
             <Button variant="success">Search</Button>
-          </Form>
+          </Form> */}
         </Navbar.Collapse>
       </Container>
     </Navbar>
