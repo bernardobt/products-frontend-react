@@ -12,7 +12,6 @@ const Books = () => {
           Suggest a Book
         </Button>
       </h1>
-
       <Dashboard />
     </Container>
   );

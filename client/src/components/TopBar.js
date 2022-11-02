@@ -20,8 +20,12 @@ function TopBar() {
             <Nav.Link href="/about">About</Nav.Link>
             <NavDropdown title="Categories" id="navbarScrollingDropdown">
               <NavDropdown.Item href="/books">Books</NavDropdown.Item>
-              <NavDropdown.Item href="/comics">Comics</NavDropdown.Item>
-              <NavDropdown.Item href="/games">Games</NavDropdown.Item>
+              <NavDropdown.Item href="/comics" disabled>
+                Comics
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/games" disabled>
+                Games
+              </NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <Form className="d-flex">
