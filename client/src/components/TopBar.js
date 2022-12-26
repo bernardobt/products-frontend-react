@@ -1,9 +1,6 @@
-import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
-import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 
 const testCategoriesObjects = [
   {
@@ -58,9 +55,9 @@ const testCategoriesObjects = [
 
 function TopBar() {
   return (
-    <Navbar bg="primary" variant="dark" expand="md" className="mb-3">
+    <Navbar bg="primary" variant="dark" expand="md">
       <Container>
-        <Navbar.Brand href="/">Jose</Navbar.Brand>
+        <Navbar.Brand href="/">序是</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -68,18 +65,10 @@ function TopBar() {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link href="/about">About</Nav.Link>
-            <Nav.Link href="/products">Products</Nav.Link>
+            <Nav.Link href="/profile"> プロフィール </Nav.Link>
+            <Nav.Link href="/catalog"> カタログ </Nav.Link>
+            <Nav.Link href="/products">一覧表</Nav.Link>
           </Nav>
-          {/* <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="success">Search</Button>
-          </Form> */}
         </Navbar.Collapse>
       </Container>
     </Navbar>
