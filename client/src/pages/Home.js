@@ -1,9 +1,10 @@
 import Container from "react-bootstrap/esm/Container";
+import Catalog from "./Catalog";
 
 const Home = () => {
   return (
     <Container>
-      <h1>This is the Home Page</h1>
+      <Catalog />
     </Container>
   );
 };
