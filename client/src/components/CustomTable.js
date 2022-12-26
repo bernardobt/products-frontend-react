@@ -22,7 +22,6 @@ const CustomTable = ({ tableColumns, tableRows }) => {
               <td>{row[`${tableColumns[1]}`]}</td>
               <td>{row[`${tableColumns[2]}`]}</td>
               <td>{row[`${tableColumns[3]}`]}</td>
-              <td>{row[`${tableColumns[4]}`]}</td>
               <td>
                 <Button disabled size="sm">
                   詳報
